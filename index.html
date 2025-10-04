@@ -15,6 +15,10 @@
 <link
   href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Work+Sans:wght@400;500;700&display=swap"
   rel="stylesheet">
+
+
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
 </head>
 
 
@@ -98,6 +102,32 @@
     <div class="overlay" data-overlay data-nav-tooggler></div>
 </header>
 
+
+<main>
+    <article>
+
+        <section class="section hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg');">
+            <div class="container">
+            <div class="hero-content">
+                <h1 class="h1 hero-title has-after">Get Your New <br> Book Collections</h1>
+                <p class="hero-text">Discover a variety of books that you can read and add to your collection.</p>
+                <div class="btn-wrapper">
+                    <a href="#" class="btn">
+                        <span class="span">Explore More</span>
+                        <ion-icon name="cart" aria-hidden="true"></ion-icon>
+                    </a>
+                    <button class="play-btn" aria-label="play video">
+                        <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+                <figure class="hero-banner">
+                    <img src="./assets/images/hero-banner.png" width="475" height="600" alt="Hero banner" class="w-100">
+                </figure>
+            </div>
+        </section>
+
+    </article>
+</main>
 
 
 

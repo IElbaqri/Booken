@@ -34,3 +34,4 @@ const activeElemOnScroll = function(){
 }
 
 addEventOnElem(window, "scroll", activeElemOnScroll);
+
