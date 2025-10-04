@@ -213,6 +213,12 @@ body{
 
 .w-100{width: 100%;}
 
+.grid-List{
+  display: grid;
+  gap: 20px;
+}
+
+
 
 /*-----------------------------------*\
   #HEADER
@@ -472,9 +478,82 @@ body{
   #FEATURE
 \*-----------------------------------*/
 
+.feature{
+  padding-block: 0;
+}
+
+.feature-card{
+  background-color: var(--oxford-blue);
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.feature-card .card-icon{
+  width: 60px;
+  flex-shrink: 0;
+}
 
 
 
+@keyframes shake-lr{
+  0%,
+  100%{
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+
+    transform-origin: 50% 50%;
+}
+10%,
+90%{
+  transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+}
+20%,
+40%,
+60%{
+  transform: rotate(-6deg);
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -ms-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+}
+
+30%,
+50%,
+70%{
+  transform: rotate(6deg);
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+}
+
+80%{
+  transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+
+}
+}
+
+.feature-card .card-title{
+  margin-block-end: 5px;
+}
+
+.feature-card:hover .card-icon{
+  animation: shake-lr 0.5s var(--cubic-anim) both;
+  -webkit-animation: shake-lr 0.5s var(--cubic-anim) both;
+}
 
 /*-----------------------------------*\
   #FEATURED COLLECTION
