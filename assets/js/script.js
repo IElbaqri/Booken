@@ -35,3 +35,23 @@ const activeElemOnScroll = function(){
 
 addEventOnElem(window, "scroll", activeElemOnScroll);
 
+const filterBtn = document.querySelectorAll("[data-filter-btn]");
+const filterItem = document.querySelectorAll("[data-filter]");
+
+let lastClickedBtn = filterBtn[0];
+
+const filter = function(){
+    lastClickedBtn.classList.remove("active");
+    this.classList.add("active");
+    lastClickedBtn = this;
+
+    for(let i = 0; i < filterItem.length; i++){
+        if(filterItem[i].dataset.filter === this.dataset.filterBtn ){
+            filterItem[i].style.display = "block";
+        } else{
+            filterItem[i].style.display = "none";
+        }
+    }
+}
+
+addEventOnElem(filterBtn, "click", filter);
