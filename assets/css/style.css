@@ -689,7 +689,36 @@ body{
 /*-----------------------------------*\
   #OFFER
 \*-----------------------------------*/
+.offer{
+  text-align: center;
+}
 
+.offer .section-subtitle{
+  font-size: var(--fs-3);
+}
+
+.offer .section-title{
+  --fs-: 3rem;
+  margin-block: 20px 30px;
+  color: var(--maximum-blue-green);
+}
+
+.countdown-list{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-block: 25px 40px;
+}
+
+.countdown-time{
+  font-size: var(--fs-5);
+  margin-block-end: 8px;
+}
+
+.offer .btn{
+  padding-block: 12px;
+  margin-inline:auto;
+}
 
 
 
@@ -721,7 +750,6 @@ body{
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
-
 
 
 
