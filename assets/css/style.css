@@ -970,3 +970,162 @@ body{
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+
+/** 
+for large than 575px screens
+**/
+
+@media (min-width: 575px) {
+
+  .container{
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .grid-List,
+  .grid-list{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .scrollbar-item{
+    min-width: calc(50% - 5px);
+  }
+
+  .hero .play-btn{
+    display: block;
+    color: var(--maximum-blue-green);
+    border: 1px solid var(--maximum-blue-green);
+    font-size:22px;
+    padding: 20px;
+    border-radius: var(--radius-circle);
+    -webkit-border-radius: var(--radius-circle);
+    -moz-border-radius: var(--radius-circle);
+    -ms-border-radius: var(--radius-circle);
+    -o-border-radius: var(--radius-circle);
+    animation: pulse 2.5s ease infinite;
+    -webkit-animation: pulse 2.5s ease infinite;
+}
+
+@keyframes pulse {
+  0%,
+  30%{
+    box-shadow: 0 0 0 0 var(--maximum-blue-green);
+    -webkit-box-shadow: 0 0 0 0 var(--maximum-blue-green);
+    -moz-box-shadow: 0 0 0 0 var(--maximum-blue-green);
+    -ms-box-shadow: 0 0 0 0 var(--maximum-blue-green);
+    -o-box-shadow: 0 0 0 0 var(--maximum-blue-green);}
+  100%{box-shadow: 0 0 0 20px transparent;}
+}
+
+.hero .btn-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero {
+  padding-block-start: 150px;
+}
+
+}
+
+/** 
+for large than 760px screens
+**/
+@media (min-width: 760px) {
+
+  :root{
+
+    --fs-1: 3.5rem;
+    --fs-2: 3rem;
+    --fs-3: 2.4rem;
+
+    --section-padding: 80px;
+
+  }
+
+  .container{max-width: 720px;}
+
+  .section-text {
+    --fs-6: 1.6rem;
+    max-width: 40ch;
+    margin-inline: auto;
+  }
+
+  .has-scrollbar{
+    gap: 30px;
+  }
+
+  .scrollbar-item{
+    min-width: calc(50% - 15px);
+  }
+
+  .product-card .card-action{
+    gap: 20px;
+    padding: 14px 20px;
+  }
+
+  .product-card .action-btn {
+    padding: 0 20px 20px;
+  }
+
+  .product-card .h3{
+    --fs-6: 1.8rem;
+  }
+
+  .product-card .card-price{
+    font-size: var(--fs-4);
+    font-weight: var(--fw-700);
+  }
+
+  .hero .container{
+    grid-template-columns: 1fr 0.7fr;
+    align-items: center;
+  }
+
+  .featured .grid-List{
+    gap: 30px;
+  }
+
+  .offer .container{
+    max-width: 420px;
+  }
+
+  .offer .section-title{
+    --fs-2: 4rem;
+  }
+
+  .container-list{
+    gap: 40px;
+  }
+
+  .countdown-time{
+    --fs-5: 2.4rem;
+  }
+
+  .footer-bottom {
+    text-align: left;
+  }
+
+  .footer-bottom .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .copyright{
+    margin-block-end: 0;
+  }
+
+  .footer-bottom .w-100 {
+    margin-inline: 0;
+  }
+
+
+
+
+
+
+}
