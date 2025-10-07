@@ -442,8 +442,8 @@ body{
   position: absolute;
   top: -15px;
   right: -8px;
-  background-color: var(--selective-yellow);
-  color: var(--eerie-black);
+  background-color: var(--eerie-black);
+  color: var(--white-1);
   font-size: var(--fs-8);
   min-width: 18px;
   min-height: 18px;
@@ -936,6 +936,34 @@ body{
   #BACK TO TOP
 \*-----------------------------------*/
 
+.back-top-btn{
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  background-color: var(--maximum-blue-green);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: var(--radius-circle);
+  transition: var(--transition-1);
+  -webkit-transition: var(--transition-1);
+  -moz-transition: var(--transition-1);
+  -ms-transition: var(--transition-1);
+  -o-transition: var(--transition-1);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+}
+
+
+.back-top-btn.active{
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  opacity: 1;
+  visibility: visible;
+}
 
 
 
